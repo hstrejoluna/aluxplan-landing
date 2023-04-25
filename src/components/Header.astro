@@ -1,16 +1,43 @@
 ---
 import HeaderLink from "./HeaderLink.astro";
-import {SITE_TITLE} from "../consts";
+import {SITE_TITLE, SITE_DESCRIPTION} from "../consts";
 import "../styles/tailwind.css";
 ---
 
-<header class="bg-gray-800 p-6">
-  <h1 class="text-white text-4xl">
-    {SITE_TITLE}
-  </h1>
-  <nav class="text-white text-xl">
-    <HeaderLink href="/">Home</HeaderLink>
-    <HeaderLink href="/blog">Blog</HeaderLink>
-    <HeaderLink href="/about">About</HeaderLink>
+<header class="bg-gray-800 p-6 flex items-center justify-between">
+  <div class="flex items-center">
+    <a href="/">
+      <img
+        src="/images/logo.jpeg"
+        alt="Alux Temple Logo"
+        class="h-20 w-auto mr-4"
+      />
+    </a>
+    <div>
+      <h1 class="text-white text-4xl">{SITE_TITLE}</h1>
+      <p class="text-white text-xl">{SITE_DESCRIPTION}</p>
+    </div>
+  </div>
+  <nav>
+    <ul class="flex items-center space-x-4">
+      <li>
+        <a href="#alux-info" class="text-white hover:text-gray-300">Aluxes</a>
+      </li>
+      <li>
+        <a href="#experience" class="text-white hover:text-gray-300"
+          >Experience</a
+        >
+      </li>
+      <li>
+        <a href="#practical-info" class="text-white hover:text-gray-300"
+          >Practical Info</a
+        >
+      </li>
+      <li>
+        <a href="#social-sharing" class="text-white hover:text-gray-300"
+          >Share</a
+        >
+      </li>
+    </ul>
   </nav>
 </header>
