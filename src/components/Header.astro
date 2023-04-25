@@ -4,13 +4,16 @@ import {SITE_TITLE, SITE_DESCRIPTION} from "../consts";
 import "../styles/tailwind.css";
 ---
 
-<header class="bg-gray-800 p-6 flex items-center justify-between">
+<header
+  class="bg-cover bg-center bg-no-repeat p-6 flex items-center justify-between"
+  style="background-image: url('/images/header-background.png')"
+>
   <div class="flex items-center">
     <a href="/">
       <img
         src="/images/logo.jpeg"
         alt="Alux Temple Logo"
-        class="h-20 w-auto mr-4"
+        class="h-20 w-auto aspect-square mr-4"
       />
     </a>
     <div>

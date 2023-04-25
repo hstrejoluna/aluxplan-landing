@@ -1,5 +1,48 @@
-<article id="experience" class="p-6">
-  <h2 class="text-3xl">Visiting the Alux Temple</h2>
-  <p>...</p>
-  <!-- Add images or videos of the temple -->
-</article>
+---
+import "../styles/tailwind.css";
+---
+
+<section id="experience" class="relative p-6 space-y-6">
+  <div class="absolute inset-0 z-[-1]">
+    <div
+      class="w-full h-full bg-cover bg-center"
+      style="background-image: url('/images/experience-background.png');  "
+    >
+      <div class="w-full h-full bg-black bg-opacity-50"></div>
+    </div>
+  </div>
+
+  <h2 class="text-3xl font-semibold text-white">The Alux Temple Experience</h2>
+
+  <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+    <div>
+      <h3 class="text-xl font-semibold text-white">
+        Atmosphere & Architecture
+      </h3>
+      <p class="text-white">
+        The Alux Temple features a blend of traditional Mayan architecture and
+        modern design. Surrounded by lush greenery and unique rock formations,
+        the temple offers an immersive experience for visitors to connect with
+        the rich history of the Mayan culture.
+      </p>
+    </div>
+    <div>
+      <h3 class="text-xl font-semibold text-white">Prayer & Offerings</h3>
+      <p class="text-white">
+        At the Alux Temple, visitors can engage in prayer or leave offerings to
+        the Aluxe entity. This spiritual practice is a way to show respect and
+        seek the blessings and protection of the Aluxes, who are believed to
+        have a strong connection to the natural world.
+      </p>
+    </div>
+    <div>
+      <h3 class="text-xl font-semibold text-white">Activities & Events</h3>
+      <p class="text-white">
+        The temple hosts a variety of activities and events throughout the year,
+        such as guided tours, workshops, and traditional ceremonies. These
+        events aim to educate visitors about the Aluxes, their significance in
+        Mayan folklore, and the fascinating history of the Mayan civilization.
+      </p>
+    </div>
+  </div>
+</section>
