@@ -1,5 +1,39 @@
-<article id="practical-info" class="p-6">
-  <h2 class="text-3xl">Practical Information</h2>
-  <p>...</p>
-  <!-- Add a map or interactive feature -->
-</article>
+---
+import "../styles/tailwind.css";
+---
+
+<section id="practical-info" class="relative p-6 space-y-6">
+  <div class="absolute inset-0 z-[-1]">
+    <div
+      class="w-full h-full bg-cover bg-center"
+      style="background-image: url('/images/practical-info-background.png');"
+    >
+      <div class="w-full h-full bg-black bg-opacity-50"></div>
+    </div>
+  </div>
+
+  <h2 class="text-3xl font-semibold text-white">Practical Information</h2>
+
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+    <div>
+      <h3 class="text-xl font-semibold text-white">Getting There</h3>
+      <p class="text-white">
+        The Alux Temple is located in Cancun's hotel zone, easily accessible by
+        public transportation, taxi, or private vehicle. The nearest landmarks
+        are the Mayan Museum and the El Rey Ruins, which can serve as a
+        reference point for navigation.
+      </p>
+    </div>
+
+    <div>
+      <h3 class="text-xl font-semibold text-white">Visitor Guidelines</h3>
+      <p class="text-white">
+        Visitors to the Alux Temple are asked to respect the sacred site and its
+        surroundings. This includes refraining from littering, damaging the
+        temple or natural environment, and being respectful of other visitors.
+        Photography is allowed, but the use of tripods or professional equipment
+        may require a permit.
+      </p>
+    </div>
+  </div>
+</section>
