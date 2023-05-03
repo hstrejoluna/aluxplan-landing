@@ -17,7 +17,7 @@ export default defineConfig({
       serviceEntryPoint: "@astrojs/image/sharp",
     }),
   ],
-  tailwindConfig: "./tailwind.config.js",
+  tailwindConfig: "./tailwind.config.cjs",
   output: "server",
   adapter: netlify(),
 });
